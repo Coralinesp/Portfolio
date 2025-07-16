@@ -1,0 +1,123 @@
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import circleImage from "../public/Gradient.png"; // si decides usar imagen luego
+
+export default function Services() {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50, scale: 0.98 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        delay: i * 0.25,
+        duration: 1.2,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    }),
+  };
+
+  const cards = [
+    {
+      title: "UX/UI Design",
+      image: "/Pen.png",
+      description:
+        "Designing user-centered digital experiences, from wireframes to interactive prototypes",
+      items: ["User Research", "Wireframing", "Prototyping", "Usability Testing"],
+    },
+    {
+      title: "Frontend Development",
+      image: "/Code.png",
+      description:
+        "I create modern and responsive web interfaces using current technologies.",
+      items: ["React", "HTML", "CSS", "Javascript", "GitHub", "VS Code"],
+    },
+    {
+      title: "3D Design",
+      image: "/Cubo.png",
+      description:
+        "Designing 3D renders, models, mockups, and animations for digital and visual projects.",
+      items: ["Blender", "Rendering", "Mockups", "Texturing", "Lightning", "VFX"],
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center">
+      <div className="bg-[#385BF0] text-white rounded-2xl px-4 py-1 font-semibold">
+        What I Do
+      </div>
+      <div className="text-white font-semibold text-2xl mt-4">
+        Where Design Strategy Meets
+      </div>
+      <div className="text-[#385BF0] font-semibold text-2xl">
+        Code and Visual Innovation
+      </div>
+
+      <div className="flex flex-wrap mt-10 gap-9 items-center justify-center">
+        {cards.map((card, i) => {
+          // Definimos el degradado según el índice
+          let gradientStyle;
+          if (i === 0) {
+            gradientStyle = {
+              background: `radial-gradient(circle at bottom right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
+            };
+          } else if (i === 1) {
+            gradientStyle = {
+              background: `radial-gradient(circle at bottom left, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
+            };
+          } else if (i === 2) {
+            gradientStyle = {
+              background: `radial-gradient(circle at top right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
+            };
+          }
+
+          return (
+            <motion.div
+              key={card.title}
+              custom={i}
+              initial="hidden"
+              whileInView="visible"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
+              viewport={{ once: true, amount: 0.4 }}
+              variants={cardVariants}
+              className="relative w-96 bg-white/5 rounded-[31px] outline outline-[1.5px] outline-neutral-200/20 hover:outline-[#385BF0] shadow-lg flex flex-col p-6 overflow-hidden"
+              style={{ position: "relative" }}
+            >
+              {/* Gradiente radial dinámico */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 rounded-[31px]"
+                style={{ ...gradientStyle, zIndex: 0 }}
+              />
+
+              {/* Contenido */}
+              <img
+                src={card.image}
+                alt={card.title}
+                className="w-32 h-32 mb-3 relative z-10"
+              />
+              <div className="text-white text-2xl font-semibold relative z-10">
+                {card.title}
+              </div>
+              <div className="mt-2 text-white text-sm font-light relative z-10">
+                {card.description}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3 relative z-10">
+                {card.items.map((item) => (
+                  <div
+                    key={item}
+                    className="text-xs text-white px-3.5 py-2 bg-white/5 rounded-lg outline outline-[1.5px] outline-white/50"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
