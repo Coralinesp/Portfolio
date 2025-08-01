@@ -1,4 +1,6 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 
 export default function ProjectCard({
   title,
@@ -9,7 +11,12 @@ export default function ProjectCard({
   role,
   industry,
   toolkit,
+  link
 }) {
+
+  const bgColorOpacity = `${color}26`; // ~15%
+  const bgColorHover = `${color}70`;   // ~44%
+
   return (
     
     <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
@@ -62,24 +69,25 @@ export default function ProjectCard({
 
         {/* Botón View Case Study */}
         <div className="mt-6">
-        <button
+          <Link
+            href={link}
             className="inline-flex items-center gap-2 text-sm font-semibold rounded-full px-4 py-2 max-w-max transition-colors duration-300 ease-in-out"
             style={{
-            border: `1.5px solid ${color}`,
-            color: color,
-            backgroundColor: `${color}26`, // fondo con opacidad baja (~15%)
-            cursor: "pointer",
+              border: `1.5px solid ${color}`,
+              color: color,
+              backgroundColor: bgColorOpacity,
+              cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = `${color}70`; // hover fondo con opacidad media (~44%)
+              e.currentTarget.style.backgroundColor = bgColorHover;
             }}
             onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = `${color}26`; // vuelve a fondo original
+              e.currentTarget.style.backgroundColor = bgColorOpacity;
             }}
-        >
+          >
             View Details
             <ArrowRight size={16} stroke={color} />
-        </button>
+          </Link>
         </div>
       </div>
     </div>

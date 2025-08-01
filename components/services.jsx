@@ -1,7 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import circleImage from "../public/Gradient.png"; // si decides usar imagen luego
 
 export default function Services() {
   const cardVariants = {
@@ -21,56 +19,50 @@ export default function Services() {
   const cards = [
     {
       title: "UX/UI Design",
-      image: "/Pen.png",
+      image: "/Pen.webp",
       description:
         "Designing user-centered digital experiences, from wireframes to interactive prototypes",
       items: ["User Research", "Wireframing", "Prototyping", "Usability Testing"],
     },
     {
       title: "Frontend Development",
-      image: "/Code.png",
+      image: "/Code.webp",
       description:
         "I create modern and responsive web interfaces using current technologies.",
       items: ["React", "HTML", "CSS", "Javascript", "GitHub", "VS Code"],
     },
     {
       title: "3D Design",
-      image: "/Cubo.png",
+      image: "/Cubo.webp",
       description:
         "Designing 3D renders, models, mockups, and animations for digital and visual projects.",
       items: ["Blender", "Rendering", "Mockups", "Texturing", "Lightning", "VFX"],
     },
   ];
 
+  const gradients = [
+    "radial-gradient(circle at bottom right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)",
+    "radial-gradient(circle at bottom left, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)",
+    "radial-gradient(circle at top right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)",
+  ];
+
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-[#385BF0] text-white rounded-2xl px-4 py-1 font-semibold">
+    <div className="flex flex-col items-center px-4 sm:px-8">
+      <div className="bg-[#385BF0] text-white  text-sm sm:text-base rounded-2xl px-4 py-1 font-semibold">
         What I Do
       </div>
-      <div className="text-white font-semibold text-2xl mt-4">
+      <div className="text-white font-semibold text-2xl mt-4 text-center sm:text-left">
         Where Design Strategy Meets
       </div>
-      <div className="text-[#385BF0] font-semibold text-2xl">
+      <div className="text-[#385BF0] font-semibold text-2xl text-center sm:text-left">
         Code and Visual Innovation
       </div>
 
-      <div className="flex flex-wrap mt-10 gap-9 items-center justify-center">
+      <div className="flex flex-col sm:flex-row mt-10 gap-6 sm:gap-9 items-center justify-center">
         {cards.map((card, i) => {
-          // Definimos el degradado según el índice
-          let gradientStyle;
-          if (i === 0) {
-            gradientStyle = {
-              background: `radial-gradient(circle at bottom right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
-            };
-          } else if (i === 1) {
-            gradientStyle = {
-              background: `radial-gradient(circle at bottom left, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
-            };
-          } else if (i === 2) {
-            gradientStyle = {
-              background: `radial-gradient(circle at top right, rgba(56, 91, 240, 0.9), rgba(56, 91, 240, 0.3) 30%, transparent 60%)`,
-            };
-          }
+          const gradientStyle = {
+            background: `${gradients[i]}, rgba(255, 255, 255, 0.05)`,
+          };
 
           return (
             <motion.div
@@ -82,33 +74,25 @@ export default function Services() {
               transition={{ type: "spring", stiffness: 100, damping: 20 }}
               viewport={{ once: true, amount: 0.4 }}
               variants={cardVariants}
-              className="relative w-96 bg-white/5 rounded-[31px] outline outline-[1.5px] outline-neutral-200/20 hover:outline-[#385BF0] shadow-lg flex flex-col p-6 overflow-hidden"
-              style={{ position: "relative" }}
+              className="relative items-center sm:items-start w-[90%] sm:w-96 rounded-[20px] sm:rounded-[31px] outline outline-[1.5px] outline-neutral-200/20 hover:outline-[#385BF0] shadow-lg flex flex-col p-4 sm:p-6 overflow-hidden"
+              style={gradientStyle}
             >
-              {/* Gradiente radial dinámico */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 rounded-[31px]"
-                style={{ ...gradientStyle, zIndex: 0 }}
-              />
-
-              {/* Contenido */}
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-32 h-32 mb-3 relative z-10"
+                className="w-24 h-24 sm:w-32 sm:h-32 mb-3 relative z-10"
               />
-              <div className="text-white text-2xl font-semibold relative z-10">
+              <div className="text-white text-xl text-center sm:text-2xl font-semibold relative z-10">
                 {card.title}
               </div>
-              <div className="mt-2 text-white text-sm font-light relative z-10">
+              <div className="mt-2 text-white text-sm font-light relative z-10 text-center sm:text-left">
                 {card.description}
               </div>
-              <div className="mt-6 flex flex-wrap gap-3 relative z-10">
+              <div className="mt-6 flex flex-wrap gap-3 text-center relative z-10 justify-center sm:justify-start">
                 {card.items.map((item) => (
                   <div
                     key={item}
-                    className="text-xs text-white px-3.5 py-2 bg-white/5 rounded-lg outline outline-[1.5px] outline-white/50"
+                    className="text-xs text-white px-3 py-1.5 bg-white/5 rounded-lg outline outline-[1.5px] outline-white/30"
                   >
                     {item}
                   </div>

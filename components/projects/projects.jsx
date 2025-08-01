@@ -9,7 +9,8 @@ const projects = [
     industry: "Food & Beverage",
     toolkit: "Figma, Google Sheets",
     color:"#708AFB",
-    cover: "/cafeapp.webp"
+    cover: "/cafeapp.webp",
+    link: "/cases/blue"
   },
   
   {
@@ -21,7 +22,8 @@ const projects = [
     industry: "Food & Beverage",
     toolkit: "Figma, Google Sheets",
     color:"#6783c0",
-    cover: "/cafeweb.webp"
+    cover: "/cafeweb.webp",
+    link: "/cases/blueweb"
   },
   {
     id: 3,
@@ -32,7 +34,9 @@ const projects = [
     industry: "Grooming & Retail",
     toolkit: "Figma, Canva",
     color:"#e08f63",
-    cover: "/benbarber.webp"
+    cover: "/benbarber.webp",
+    link: "/cases/blue"
+
   },
   {
     id: 4,
@@ -43,7 +47,8 @@ const projects = [
     industry: "Avocado & Exotic Fruit Export and Distribution",
     toolkit: "React, VS Code, Canva",
     color:"#048d8e",
-    cover: "/glsila.webp"
+    cover: "/glsila.webp",
+    link: "/cases/blue"
   },
   {
     id: 5,
@@ -54,7 +59,8 @@ const projects = [
     industry: "Automotive & Car Dealership",
     toolkit: "Canva",
     color:"#d50500",
-    cover: "/turbozone.webp"
+    cover: "/turbozone.webp",
+    link: "/cases/blue"
   },
    {
     id: 6,
@@ -65,7 +71,8 @@ const projects = [
     industry: "Digital Art & Game Assets",
     toolkit: "Blender",
     color:"#cc9a98",
-    cover: "/hammer.webp"
+    cover: "/hammer.webp",
+    link: "https://drive.google.com/file/d/1Tgslw2M-ySkghK3WHkibSiPqc1M0C2kG/view?usp=sharing"
   },
   {
     id: 7,
@@ -76,7 +83,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender, fSpy",
     color:"#84a0c5",
-    cover: "/karlavfx.webp"
+    cover: "/karlavfx.webp",
+    link: "https://drive.google.com/file/d/1UGj_MBcvadHDemX7z7GMUEgvdTQhUJ2u/view?usp=sharing"
   },
    {
     id: 8,
@@ -87,7 +95,8 @@ const projects = [
     industry: "Digital Art &  Mockups",
     toolkit: "Blender",
     color:"#e08f63",
-    cover: "/mockup.webp"
+    cover: "/mockup.webp",
+    link: "https://drive.google.com/file/d/1avFBVYMh8VcYXagGhdKGi_XDm_4TGMK_/view?usp=sharing"
   },
   {
     id: 9,
@@ -98,7 +107,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender, Adobe Illustrator",
     color:"#8492cb",
-    cover: "/koda.webp"
+    cover: "/koda.webp",
+    link: "https://drive.google.com/file/d/1jjPTjqx87RuUpZ8cC7IgCgNOVHorcymC/view?usp=sharing"
   },
    {
     id: 10,
@@ -109,7 +119,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender",
     color:"#617e39",
-    cover: "/christmas.webp"
+    cover: "/christmas.webp",
+    link: "https://drive.google.com/file/d/1xm3lYzFvYah4aNuMzHgtOLcSL3o1ETYQ/view?usp=sharing"
   },
   {
     id: 11,
@@ -120,7 +131,8 @@ const projects = [
     industry: "Digital Art & Interior Design",
     toolkit: "Blender",
     color:"#d73d0e",
-    cover: "/picante.webp"
+    cover: "/picante.webp",
+    link: "https://drive.google.com/file/d/1M_NciEQ0WC5jJ6mFPD6UpOuSyLm_RLLd/view?usp=sharing"
   },
     {
     id: 12,
@@ -131,7 +143,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender",
     color:"#9d8eca",
-    cover: "/wallpaper.webp"
+    cover: "/wallpaper.webp",
+    link: "https://drive.google.com/file/d/1ZTOV1gP_nhJjHjlvjHGRaG7Kzmf9il4w/view?usp=sharing"
   },
    {
     id: 13,
@@ -142,7 +155,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender",
     color:"#ccee04",
-    cover: "/bmo.webp"
+    cover: "/bmo.webp",
+    link: "https://drive.google.com/file/d/1avv0Aq7TIpyuRXrruOKXIgaDtqAO31Ya/view?usp=sharing"
   },
    {
     id: 14,
@@ -153,7 +167,8 @@ const projects = [
     industry: "Digital Art",
     toolkit: "Blender",
     color:"#7e90d0",
-    cover: "/camera.webp"
+    cover: "/camera.webp",
+    link: "https://drive.google.com/file/d/1CJuqkWu1-394dcmQvBrVpD6MQprdkU_3/view?usp=sharing"
   },
    
 ];

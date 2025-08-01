@@ -3,12 +3,12 @@
 import Image from 'next/image';
 
 const techItems = [
-  { img: '/Blender.png', text: 'Blender' },
-  { img: '/Figma.png', text: 'Figma' },
-  { img: '/VS.png', text: 'VS Code' },
-  { img: '/React.png', text: 'React' },
-  { img: '/Git.png', text: 'GitHub' },
-  { img: '/SQL.png', text: 'SQL Server M' },
+  { img: '/Blender.webp', text: 'Blender' },
+  { img: '/Figma.webp', text: 'Figma' },
+  { img: '/VS.webp', text: 'VS Code' },
+  { img: '/React.webp', text: 'React' },
+  { img: '/Git.webp', text: 'GitHub' },
+  { img: '/SQL.webp', text: 'SQL Server M' },
 ];
 
 export default function Skills() {

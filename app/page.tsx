@@ -10,6 +10,8 @@ import Skills from '../components/skills'
 import Services from '../components/services'
 import SelectedWorks from '../components/works'
 import CallToAction from '../components/cierre'
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaBehance, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -37,7 +39,7 @@ export default function Home() {
         <div className="text-center text-white font-bold text-[25px] sm:text-[48px] md:text-[64px] max-w-[90vw] sm:max-w-[492px] mx-auto h-auto leading-tight">
           Caroline Pérez
         </div>
-        <div className="text-center text-white font-normal leading-normal text-[10px] sm:text-lg md:text-xl max-w-[90vw] sm:max-w-[480px] mx-auto">
+        <div className="text-center text-white font-normal leading-normal text-xs sm:text-lg md:text-xl max-w-[90vw] sm:max-w-[480px] mx-auto">
           UX/UI Designer · Frontend Developer · 3D Artist <br />
           Based in Dominican Republic
         </div>
@@ -82,13 +84,53 @@ export default function Home() {
         <Services />
       </div>
        {/*Works */}
-      <div className='mb-20'> 
+      <div id="work" className='mb-20'> 
         <SelectedWorks  />
       </div>
        {/*Cierre */}
-      <div className='mb-20'> 
+      <div id="contact" className='mb-16'> 
         <CallToAction  />
       </div>
+      {/* Footer */}
+    <div className="w-full px-6 sm:px-12 lg:px-44 flex flex-col sm:flex-row justify-between items-center gap-4 py-4 mb-5 shadow-md rounded-md text-white bg-[#040615]">
+      {/* Lado izquierdo: Correo */}
+      <a
+        href="mailto:perezcruzcaroline@gmail.com"
+        className="flex items-center gap-2 hover:text-blue-400 transition-colors text-sm sm:text-base"
+      >
+        <MdEmail className="w-5 h-5" />
+        <span>perezcruzcaroline@gmail.com</span>
+      </a>
+
+      {/* Lado derecho: Follow Me */}
+      <div className="flex items-center gap-3 sm:gap-4">
+        <span className="font-semibold text-sm sm:text-base">Follow Me!</span>
+
+        <a
+          href="https://www.linkedin.com/in/caroline-ninoska-perez-cruz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="w-5 h-5 hover:text-blue-600 transition-colors" />
+        </a>
+
+        <a
+          href="https://www.behance.net/carolineperez7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaBehance className="w-5 h-5 hover:text-blue-500 transition-colors" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/coralinessp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="w-5 h-5 hover:text-pink-500 transition-colors" />
+        </a>
+      </div>
+    </div>
     </div>
   );
 }

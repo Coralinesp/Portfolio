@@ -13,6 +13,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		plugins: [
+  require('tailwind-scrollbar-hide'),
+],
 		fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },

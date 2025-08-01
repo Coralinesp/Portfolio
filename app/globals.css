@@ -3,9 +3,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Scrollbar personalizada */
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 body {
   @apply font-sans bg-background text-foreground;
+}
+html {
+  scroll-behavior: smooth;
 }
 html, body {
   overflow-x: hidden;

@@ -97,9 +97,9 @@ export default function AnimatedSplitText({ onAnimationEnd }) {
   return (
     <p
       ref={ref}
-      className="text-white text-justify sm:text-center text-[10px] sm:text-lg md:text-xl lg:text-2xl font-light max-w-5xl"
+      className="text-white text-justify sm:text-center text-sm sm:text-lg md:text-xl lg:text-2xl font-light max-w-5xl"
     >
-      I’m a <span style={{ color: '#708AFB' }}>multidisciplinary</span> designer and developer who thrives on crafting <span style={{ color: '#708AFB' }}>user-centered</span> digital experiences. From UX/UI design to frontend development and 3D visualization, I bring versatility, <span style={{ color: '#708AFB' }}>creativity</span>, and precision to every project — combining functionality with visual impact.
+      I’m a <span style={{ color: '#708AFB' }}> multidisciplinary</span> designer and developer who thrives on crafting <span style={{ color: '#708AFB' }}>user-centered</span> digital experiences. From UX/UI design to frontend development and 3D visualization, I bring versatility, <span style={{ color: '#708AFB' }}>creativity</span>, and precision to every project — combining functionality with visual impact.
     </p>
   );
 }

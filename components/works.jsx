@@ -76,6 +76,7 @@ export default function SelectedWorks() {
               role={project.role}
               industry={project.industry}
               toolkit={project.toolkit}
+              link={project.link}
             />
           </motion.div>
         ))}
