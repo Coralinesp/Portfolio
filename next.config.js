@@ -1,8 +1,11 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production'
+const repo = 'portfolio' // o el nombre real de tu repo
 
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/mi-portfolio' : '',
-  assetPrefix: isProd ? '/mi-portfolio/' : '',
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+  distDir: 'docs', // <--- esto hace que se genere /docs en lugar de /out
 }
+
+module.exports = nextConfig;
