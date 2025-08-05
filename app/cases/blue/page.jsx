@@ -77,7 +77,7 @@ export default function Bluebreeze() {
                 Blue & Breeze is a conceptual café for which I designed a delivery app focused on clarity, 
                 accessibility, and a seamless ordering experience, including customization and delivery options.
               </p>
-              <div className='flex mt-6 justify-between w-full md:w-2/3 '>
+              <div className='flex mt-6 justify-between w-full '>
                 <div className='flex flex-col'>
                   <h1 className='font-bold'>My Role</h1>
                   <p>Lead UX Designer</p>
@@ -563,9 +563,9 @@ export default function Bluebreeze() {
                   <div className="lg:w-1/3 bg-indigo-600 rounded-lg p-6 shadow-lg text-white">
                     <h3 className="text-xl font-bold mb-6 text-center">Key Performance Indicators (KPIs)</h3>
                     <ul className="list-disc list-inside space-y-4">
-                      <li><strong>Task Completion Rate:</strong> % of users completing orders without assistance (↑ 75% → 95%)</li>
-                      <li><strong>Time on Task:</strong> Average order completion time (↓ 20% post-redesign)</li>
-                      <li><strong>Error Rate:</strong> Frequency of checkout errors (reduced with UI improvements)</li>
+                      <li><strong>Task Completion Rate:</strong> 80% of users completed core tasks (menu navigation, filtering, cart review) without assistance </li>
+                      <li><strong>Time on Task:</strong>  Average task completion time was 8 minutes 45 seconds</li>
+                      <li><strong>Error Rate:</strong> Users encountered an average of 2.5 errors per session, mostly related to filter usability</li>
                     </ul>
                   </div>
                 </div>

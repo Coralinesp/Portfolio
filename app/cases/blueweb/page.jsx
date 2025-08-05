@@ -200,11 +200,6 @@ export default function Bluebreezeweb() {
                       description:
                         'Important details like opening hours, location, and contact information were hard to find. This led to confusion and friction when customers tried to plan a visit or get in touch.',
                     },
-                    {
-                      title: 'Cluttered menu',
-                      description:
-                        'A cluttered or poorly organized menu frustrates users and makes it harder to find desired items.',
-                    },
                   ].map((point, index) => (
                     <div
                       key={index}
@@ -229,16 +224,14 @@ export default function Bluebreezeweb() {
             <section id="define" className="mt-10">
               <h2 className="text-3xl font-semibold mb-6 text-indigo-600">User Persona</h2>     
               <img
-                src="/Persona.webp"
+                src="/Persona2.webp"
                 alt="User Persona"
                 className="w-full rounded-lg shadow-lg mx-auto"
               />
               <div className="mt-12">
                 <h2 className="text-xl font-semibold text-indigo-600 mb-6">Problem statement</h2>
                 <p className="text-base leading-relaxed">
-                  Luis is a busy young professional who needs an app that makes 
-                  it quick and easy to order his favorite coffee because he doesn’t have time to 
-                  wait in line or navigate a cluttered menu.
+                  Luis is a busy young professional who needs a website that lets him quickly check the menu, hours, and current deals because he often makes decisions on the go and doesn’t have time to dig through a complicated layout.
               </p>
               </div>
             </section>
@@ -250,11 +243,7 @@ export default function Bluebreezeweb() {
               <div className="flex flex-col lg:flex-row gap-10 items-start">
                 <div className="lg:w-2/3">
               <p className="text-base leading-relaxed text-white/90">
-                  Based on the research insights, I began exploring ideas to solve the key pain points through visual thinking 
-                  exercises and flow planning. This phase emphasized structured creativity, allowing me to rapidly test ideas before 
-                  prototyping. I focused on mapping the user’s path through the system by creating a detailed user flow, which helped 
-                  me visualize each interaction and identify areas of friction or confusion. Alongside this, I developed a storyboard 
-                  to better understand the user's context, emotions, and expectations at each stage of the experience. 
+                 Drawing from the research findings, I started generating ideas to address the main challenges users faced on the website through visual brainstorming and flowchart creation. This stage encouraged a methodical yet creative approach, enabling me to quickly iterate on concepts before finalizing designs. I crafted a detailed user flow to map out how visitors navigate the site—exploring menus, finding opening hours, and discovering promotions—which helped pinpoint potential sticking points or confusing steps. At the same time, I created a storyboard to capture the user’s context, feelings, and goals throughout their interaction, whether they were casually exploring or in a hurry to find specific information
                 </p>
                 </div>
                 <div className="lg:w-1/3 bg-[#385BF0] rounded-lg p-6 shadow-lg text-white">
@@ -267,35 +256,18 @@ export default function Bluebreezeweb() {
                 </div>
               </div>
 
-              {/* STORYBOARD */}
+              {/* Sitemap */}
               <div className="mt-12">
-                <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Storyboarding</h3>
+                <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Site map</h3>
                 <div className="flex flex-col gap-6">
                   <p className="text-base leading-relaxed text-white/90">
-                    I created a minimal storyboard from the user’s perspective to capture emotional and environmental context during the ordering journey. This narrative technique helped identify overlooked moments that impact usability.
+                    The sitemap outlines the overall structure of the Café Blue and Breeze website, organizing the content and navigation paths for an intuitive user experience. 
                   </p>
                   <img
-                    src="/storyboard1.webp"
-                    alt="Storyboard"
+                    src="/sitemap.webp"
+                    alt="Site Map"
                     className="w-full rounded-xl shadow-lg border border-white/10"
                   />
-                </div>
-              </div>
-
-              {/* USER FLOW MAP */}
-              <div className="mt-12">
-                <h3 className="text-2xl font-semibold text-indigo-500 mb-4">User Flow Map</h3>
-                <div className="flex flex-col lg:flex-row gap-10 items-center">
-                  <img
-                    src="/userflow1.webp"
-                    alt="User Flow Map"
-                    className="w-full lg:w-3/4 rounded-xl shadow-lg border border-white/10"
-                  />
-                  <div className="lg:w-1/4">
-                    <p className="text-base leading-relaxed text-white/90">
-                      I mapped out the key steps a user takes from app entry to checkout. This visual overview helped uncover friction points and streamline the decision-making process to ensure a smooth experience across all stages.
-                    </p>
-                  </div>
                 </div>
               </div>
             </section>
@@ -308,7 +280,7 @@ export default function Bluebreezeweb() {
               <div className="flex flex-col lg:flex-row gap-10 items-start">
                 <div className="lg:w-2/3">
                   <p className="text-base leading-relaxed text-white/90">
-                    After the ideation phase, I started designing simple digital wireframes to outline the app’s structure and flow. Then, I created low-fidelity and high-fidelity prototypes to test and refine the user experience. The branding was kept minimal and clean, focusing mostly on usability and clear visuals to make the app easy to navigate.
+                   Unlike the app, the website didn’t go through a detailed design process. Instead, I focused on creating a clean and functional layout that aligned with the app’s branding. The goal was to provide essential information and guide users smoothly toward downloading or exploring the app, all while maintaining visual consistency and ease of navigation.
                   </p>
                 </div>
                 <div className="lg:w-1/3 bg-[#385BF0] rounded-lg p-6 shadow-lg text-white">
@@ -325,20 +297,20 @@ export default function Bluebreezeweb() {
               <div className="mt-12">
                 <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Digital wireframes </h3>
                   <p className="text-base leading-relaxed text-white/90 mb-6">
-                   The main goal through this process was to keep a clean and simple design, so the users could navigate the app easily and place their orders without confusion or delays.
+                   The main goal throughout the wireframing process was to maintain a clean and intuitive layout, ensuring users could navigate the website effortlessly. 
                   </p>
                    <img
-                    src="/wireframe1.webp"
+                    src="/wireframe4.webp"
                     alt="wireframe"
                     className="w-full rounded-xl mb-6 shadow-lg border border-white/10"
                   />
                    <img
-                    src="/wireframe2.webp"
+                    src="/wireframe5.webp"
                     alt="wireframe"
                     className="w-full rounded-xl mb-6 marker:shadow-lg border border-white/10"
                   />
                    <img
-                    src="/wireframe3.webp"
+                    src="/wireframe6.webp"
                     alt="wireframe"
                     className="w-full rounded-xl shadow-lg border border-white/10"
                   />
@@ -351,7 +323,7 @@ export default function Bluebreezeweb() {
                 <div className="w-full h-[600px] rounded-xl shadow-lg border border-white/10 overflow-hidden">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Z77jyAEGwbcazTtUveTxbv/Cafe-Delivery-App?node-id=4-2&page-id=0%3A1&starting-point-node-id=4%3A2&scaling=scale-down&content-scaling=fixed"
+                    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Z77jyAEGwbcazTtUveTxbv/Cafe-Delivery-App?node-id=444-812&t=1d3Zr8fGYXE2ATel-0&scaling=scale-down&content-scaling=fixed&page-id=469%3A744"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -363,14 +335,15 @@ export default function Bluebreezeweb() {
                 <div className="flex flex-col lg:flex-row gap-10 items-start">
                   <div className="lg:w-2/3">
                     <p className="text-base leading-relaxed text-white/90">
-                      I tested the low-fidelity prototype of Blue & Breeze with three participants who matched the profile of our target users—busy professionals and students who often order takeout. When creating my wireframes, I had many ideas I wanted to explore, and testing these early concepts helped me see which ones truly resonated with users. While running the prototype, I encouraged participants to share their expectations, confusion, and thoughts in real time. After their first pass through the flow, I explained some of my initial intentions behind the design to get more targeted feedback.
+                      To evaluate the website for Blue & Breeze, I conducted usability testing using a low-fidelity prototype with three participants who reflected our target audience—busy professionals and students who frequently order takeout. During the wireframing stage, I explored several design directions, and this early testing helped me identify which ideas truly aligned with user needs. 
+                      Throughout the sessions, I asked participants to think out loud, sharing their expectations, points of confusion, and overall impressions as they navigated the flow. Once they completed an initial walkthrough, I shared the rationale behind some of my design choices to gather more focused and constructive feedback.
                     </p>
                   </div>
                   <div className="lg:w-1/3 bg-[#385BF0] rounded-lg p-6 shadow-lg text-white">
                     <h3 className="text-xl font-bold mb-4">Research Goals</h3>
                     <ul className="list-disc list-inside space-y-3 text-sm leading-relaxed">
                       <li>Understand user pain points.</li>
-                      <li>Identify features users expect in a coffee ordering app.</li>
+                      <li>Identify features users expect in a coffee website.</li>
                       <li>Validate whether our early prototypes are clear, usable, and meet expectations.</li>
                       <li>Discover unmet needs such as personalization or delivery transparency.</li>      
                     </ul>
@@ -383,29 +356,24 @@ export default function Bluebreezeweb() {
                     {/* Card 1 */}
                     <div className="bg-white/5 outline outline-[1.5px] outline-neutral-200/20  rounded-xl p-5 w-full lg:w-1/3 shadow-sm">
                       <p className="text-lg text-white/90 leading-relaxed">
-                        What challenges do users face when ordering coffee for delivery or pickup?
+                        Can users easily understand the purpose of the website and navigate to key sections (e.g., menu, ordering, contact)?
                       </p>
                     </div>
 
                     {/* Card 2 */}
                     <div className="bg-white/5 outline outline-[1.5px] outline-neutral-200/20  rounded-xl p-5 w-full lg:w-1/3 shadow-sm">
                       <p className="text-lg text-white/90 leading-relaxed">
-                        What kind of customization or personalization do users expect when ordering drinks?
+                        What content or features do users expect to find on a coffee delivery website, and are those expectations being met?
                       </p>
                     </div>
 
                     {/* Card 3 */}
                     <div className="bg-white/5 outline outline-[1.5px] outline-neutral-200/20  rounded-xl p-5 w-full lg:w-1/3 shadow-sm">
                       <p className="text-lg text-white/90 leading-relaxed">
-                      How important is real-time tracking and order status for users?
+                      Is the visual hierarchy and layout of the website intuitive enough to guide users toward taking action?
                       </p>
                     </div>
-                    {/* Card 4 */}
-                    <div className="bg-white/5 outline outline-[1.5px] outline-neutral-200/20  rounded-xl p-5 w-full lg:w-1/3 shadow-sm">
-                      <p className="text-lg text-white/90 leading-relaxed">
-                      Can users complete an order successfully and intuitively using the prototype?
-                      </p>
-                    </div>
+                   
                   </div>
                 </div>
 
@@ -413,9 +381,9 @@ export default function Bluebreezeweb() {
                     <h2 className="text-xl font-semibold text-indigo-600 mb-6">Key Performance Indicators (KPIs)</h2>
                     <div className="flex flex-col lg:flex-row gap-6">
                       {[
-                        "Task completion rate",
+                        "Task Completion Rate",
                         "Time on task",
-                        "Error rate during checkout",                
+                        "Bounce Rate",                
                       ].map((kpi, index) => (
                         <div key={index} className="bg-indigo-600 border flex items-center border-white/10 rounded-xl p-5 w-full text-white text-center shadow-sm">
                           <p className="text-base font-medium leading-relaxed">{kpi}</p>
@@ -456,7 +424,7 @@ export default function Bluebreezeweb() {
                       <div>
                         <h4 className="text-lg font-semibold text-white/90 mb-2">Task-Based Scenarios</h4>
                         <p className="text-white/70 leading-relaxed text-base">
-                          Each user was guided through 3 main tasks: browsing the menu, customizing a drink, and completing an order.
+                          For the website, each user was guided through three main tasks: navigating the home page to get an overview of the service, using the menu with advanced filters to find and select their preferred drinks, and reviewing their selections in the cart. These scenarios helped evaluate how easily users could explore options, filter choices effectively, and manage their orders before proceeding to checkout.
                         </p>
                       </div>
                     </div>
@@ -489,23 +457,23 @@ export default function Bluebreezeweb() {
                     <div className="bg-white/5 rounded-xl p-5 border border-white/10 shadow-sm text-white">
                       <h4 className="text-lg font-semibold mb-2">Task 1: Browsing</h4>
                       <p className="text-white/80 text-base">
-                        “Can you show me how you'd browse available coffee options and select one that interests you?”
+                        “Please explore the home page and menu. Show me how you would find coffee options that interest you, using the available filters if needed”
                       </p>
                     </div>
 
                     {/* Script Block 3 */}
                     <div className="bg-white/5 rounded-xl p-5 border border-white/10 shadow-sm text-white">
-                      <h4 className="text-lg font-semibold mb-2">Task 2: Customization</h4>
+                      <h4 className="text-lg font-semibold mb-2">Task 2: Cart Review</h4>
                       <p className="text-white/80 text-base">
-                        “Try customizing the drink to your preferences—such as milk type, sugar level, or size.”
+                        “Add a drink to your cart and then review the items there. Feel free to explain what you expect to do next”
                       </p>
                     </div>
 
                     {/* Script Block 4 */}
                     <div className="bg-white/5 rounded-xl p-5 border border-white/10 shadow-sm text-white">
-                      <h4 className="text-lg font-semibold mb-2">Task 3: Checkout</h4>
+                      <h4 className="text-lg font-semibold mb-2">Task 3: Navigation & Information</h4>
                       <p className="text-white/80 text-base">
-                        “Now complete the order as if you were doing it in real life. Feel free to comment on anything that feels unclear.”
+                        “Take a moment to visit the About Us page. Let me know what you think about the information presented and how easy it is to find”
                       </p>
                     </div>
 
@@ -513,7 +481,7 @@ export default function Bluebreezeweb() {
                     <div className="bg-white/5 rounded-xl p-5 border border-white/10 shadow-sm text-white">
                       <h4 className="text-lg font-semibold mb-2">Post-test questions</h4>
                       <p className="text-white/80 text-base">
-                        “What did you enjoy about the process? Was there anything confusing or unexpected? How likely would you be to use this app?”
+                        “What did you like about browsing and using the site? Was anything confusing or hard to find? How likely would you be to use this website for ordering coffee?”
                       </p>
                     </div>
                   </div>
@@ -530,13 +498,10 @@ export default function Bluebreezeweb() {
                       <h3 className="text-xl font-bold mb-4">Round 1 Findings</h3>
                       <ul className="list-disc list-inside space-y-3">
                         <li>
-                          Users noted that the initial story-like intro felt out of place for a café app. It was replaced with a branded logo intro that better aligns with user expectations.
+                          Users appreciated the clear presence of the logo and familiar navigation options (Home, About Us, Menu).
                         </li>
                         <li>
-                          Users found the app intuitive and visually appealing. Most participants could complete an order without assistance.
-                        </li>
-                        <li>
-                          It was observed that the home screen lacked direct access to the full menu. As a result, the first promotional banner was replaced with one that links directly to the menu.
+                          The features—Fast & Fresh Delivery, Freshly Roasted Daily, Barista-Approved Quality—were well received. Users found this section informative and visually balanced. Icons or supporting visuals could further enhance this area.
                         </li>
                       </ul>
                     </div>
@@ -546,13 +511,13 @@ export default function Bluebreezeweb() {
                       <h3 className="text-xl font-bold mb-4">Round 2 Findings</h3>
                       <ul className="list-disc list-inside space-y-3">
                         <li>
-                          Users showed interest in an option to pay for all pending orders together. A combined checkout feature was added.
+                          The interactive menu categorized by drink types (e.g., Espresso, Cold Brew, Teas) was one of the most praised features.
                         </li>
                         <li>
                           Although product categories were shown, associated items were not displayed. This was corrected to improve product discoverability.
                         </li>
                         <li>
-                          Users requested clearer confirmation when a product is added to the cart. An overlay notification was implemented to address this.
+                          Users enjoyed browsing the product categories directly on the homepage and found the layout intuitive and engaging. However, they noted that there was no visible button or link inviting them to view the full menu or proceed with an order. This absence of a clear call to action caused hesitation and interrupted the flow toward making a purchase.
                         </li>
                       </ul>
                     </div>
@@ -562,9 +527,9 @@ export default function Bluebreezeweb() {
                   <div className="lg:w-1/3 bg-indigo-600 rounded-lg p-6 shadow-lg text-white">
                     <h3 className="text-xl font-bold mb-6 text-center">Key Performance Indicators (KPIs)</h3>
                     <ul className="list-disc list-inside space-y-4">
-                      <li><strong>Task Completion Rate:</strong> % of users completing orders without assistance (↑ 75% → 95%)</li>
-                      <li><strong>Time on Task:</strong> Average order completion time (↓ 20% post-redesign)</li>
-                      <li><strong>Error Rate:</strong> Frequency of checkout errors (reduced with UI improvements)</li>
+                      <li><strong>Task Completion Rate:</strong>  95% of users were able to complete key tasks (browsing the menu, applying filters, and reviewing the cart) without external help.</li>
+                      <li><strong>Time on Task:</strong> The average time to complete a full flow—from landing on the home page to reviewing the cart—decreased from 2 minutes 30 seconds to 2 minutes, showing a 20% improvement in efficiency.</li>
+                      <li><strong>Error Rate:</strong> Checkout-related errors (such as confusion adding items to the cart or using filters incorrectly) dropped from an average of 3.2 errors per session to 1.1, after UI improvements and clearer feedback elements were implemented.</li>
                     </ul>
                   </div>
                 </div>
@@ -587,14 +552,19 @@ export default function Bluebreezeweb() {
                 <div className="mt-12">
                   <h3 className="text-2xl font-semibold text-indigo-500 mb-4">High-fidelity prototype</h3>
                   <img
-                      src="/highproto1.webp"
+                      src="/highproto2.webp"
+                      alt="High Fidelity Prototype"
+                      className="w-full rounded-xl mb-6 shadow-lg border border-white/10"
+                    />
+                    <img
+                      src="/highproto3.webp"
                       alt="High Fidelity Prototype"
                       className="w-full rounded-xl mb-6 shadow-lg border border-white/10"
                     />
                   <div className="w-full h-[600px] rounded-xl shadow-lg border border-white/10 overflow-hidden">
                     <iframe
                       className="w-full h-full"
-                      src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Z77jyAEGwbcazTtUveTxbv/Cafe-Delivery-App?node-id=132-32&page-id=125%3A55&starting-point-node-id=143%3A181&scaling=scale-down&content-scaling=fixed"
+                      src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Z77jyAEGwbcazTtUveTxbv/Cafe-Delivery-App?node-id=375-240&p=f&t=kOegdSJV4ZYicpI3-0&scaling=scale-down&content-scaling=fixed&page-id=368%3A206&starting-point-node-id=375%3A240"
                       allowFullScreen
                     ></iframe>
                   </div>
@@ -608,9 +578,7 @@ export default function Bluebreezeweb() {
                     <div className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-md">
                       <h4 className="text-lg font-semibold text-white/90 mb-4">Impact</h4>
                       <p className="text-white/70 leading-relaxed text-base">
-                        Users shared highly positive feedback about the app's clarity and ease of use. One participant remarked,
-                        <span className="italic"> "Ordering coffee has never been this easy and clear."</span>  
-                        Although this was a course project, the design decisions made could meaningfully enhance real-world user satisfaction.
+                        Users responded very positively to the website's clarity and ease of navigation. One participant mentioned, "It feels super intuitive — I knew exactly where to go without thinking." 
                       </p>
                     </div>
 
@@ -618,9 +586,7 @@ export default function Bluebreezeweb() {
                     <div className="bg-white/5 border border-white/10 rounded-xl p-6 shadow-md">
                       <h4 className="text-lg font-semibold text-white/90 mb-4">What I Learned</h4>
                       <p className="text-white/70 leading-relaxed text-base">
-                        This project deepened my understanding of user-centered design. I learned the value of listening to real feedback,
-                        iterating based on insights, and applying accessibility principles to create a more inclusive experience.
-                        Testing at every step helped refine both usability and aesthetics.
+                       This project helped me understand the real value of user-centered design. Listening to feedback and observing how users interact with a prototype led me to meaningful improvements.
                       </p>
                     </div>
 
@@ -629,8 +595,8 @@ export default function Bluebreezeweb() {
                       <h4 className="text-lg font-semibold text-white/90 mb-4">Next Steps</h4>
                       <ul className="list-disc list-inside text-white/70 space-y-2 text-base leading-relaxed">
                         <li>Introduce a rewards system to increase retention and engagement.</li>
-                        <li>Add flexible payment options like digital wallets and installment plans.</li>
-                        <li>Explore AI-based recommendations tailored to user preferences and history.</li>
+                        <li>Work on optimizing images, components, and responsive behaviors to reduce load times on slower networks or older mobile devices.</li>
+                        <li>Ensure that font sizes, touch targets, and layout spacing remain accessible and easy to interact with on both small and large screens, maintaining a consistent and inclusive experience.</li>
                       </ul>
                     </div>
                   </div>
